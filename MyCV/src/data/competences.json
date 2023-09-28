@@ -1,0 +1,59 @@
+{
+    "competences": [
+        {
+            "id": 1,
+            "nom": "React",
+            "niveau": "Avancé"
+        },
+        {
+            "id": 2,
+            "nom": "JavaScript",
+            "niveau": "Avancé"
+        },
+        {
+            "id": 3,
+            "nom": "HTML/CSS",
+            "niveau": "Intermédiaire"
+        },
+        {
+            "id": 4,
+            "nom": "PHP",
+            "niveau": "Avancé"
+        },
+        {
+            "id": 5,
+            "nom": "Laravel",
+            "niveau": "Intermédiaire"
+        },
+        {
+            "id": 6,
+            "nom": "Node.js",
+            "niveau": "Intermédiaire"
+        },
+        {
+            "id": 7,
+            "nom": "Express",
+            "niveau": "Intermédiaire"
+        },
+        {
+            "id": 8,
+            "nom": "Base de données",
+            "niveau": "Avancé"
+        },
+        {
+            "id": 9,
+            "nom": "Angular",
+            "niveau": "Débutant"
+        },
+        {
+            "id": 10,
+            "nom": "TailwindCSS",
+            "niveau": "Intermédiaire"
+        },
+        {
+            "id": 11,
+            "nom": "Anglais",
+            "niveau": "Avancé"
+        }
+    ]
+}

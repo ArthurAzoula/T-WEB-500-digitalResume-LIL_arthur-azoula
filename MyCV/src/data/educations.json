@@ -1,0 +1,68 @@
+{
+    "educations": [
+        {
+            "id": 1,
+            "degree": "DUT en Informatique",
+            "school": "IUT de Reims",
+            "location": "Reims, France",
+            "date": "Septembre 2020 - Juin 2022",
+            "description": "DUT Informatique sur deux ans, avec un stage. Apprentissage des différents concepts de l'informatique (web, réseaux, algorithmie, gestion de projets). D'autres concepts étudiés : communications, droit de l'informatique. Deuxième année avec une spécialité en ouverture scientifique, avec du C++ et un renforcement en mathématiques.",
+            "competences": [
+                "PHP",
+                "HTML",
+                "CSS",
+                "JS",
+                "Symfony",
+                "Python",
+                "C++",
+                "Merise",
+                "UML",
+                "Gestion de Projet",
+                "Droit des TIC",
+                "Communication",
+                "Anglais"
+            ]
+        },
+        {
+            "id": 2,
+            "degree": "Licence en Informatique",
+            "school": "Université de Lille",
+            "location": "Lille, France",
+            "date": "Septembre 2022 - Août 2023",
+            "description": "3ème année de Licence Informatique. Plusieurs concepts de l'informatique : programmation fonctionnelle avec Haskell, POO avec Java, gestion d'entreprise et optimisation des coûts dans une entreprise avec AMPL. JavaScript Full stack avec React et Node.js/Express.",
+            "competences": [
+                "HTML",
+                "CSS",
+                "AMPL",
+                "Java",
+                "Haskell",
+                "JS",
+                "React",
+                "Node.js",
+                "Communication",
+                "Anglais"
+            ]
+        },
+        {
+            "id": 3,
+            "degree": "Pré-MSc / MSc Pro",
+            "school": "Epitech",
+            "location": "Lille, France",
+            "date": "Septembre 2023 - Septembre 2026",
+            "description": "3 années en alternance, piscine de code en cours...",
+            "competences": [
+                "PHP",
+                "JS",
+                "HTML",
+                "CSS",
+                "Vue",
+                "React",
+                "Angular",
+                "Node.js",
+                "Mobile",
+                "Anglais",
+                "Java"
+            ]
+        }
+    ]
+}
