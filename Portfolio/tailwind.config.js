@@ -7,16 +7,21 @@ export default {
   theme: {
     extend: {
       backgroundColor: {
-        'soft-mint-green': '#D1E8E2',
-        'deep-teal': '#19747E',
-        'light-sky-blue': '#A9D6E5',
-        'light-gray': '#E2E2E2',
+        "dark-purple": '#1F0318',
+        "champagne": '#EEE0CB',
+        "bole": '#7F534B',
+        "chamoisee": '#8c705f',
+        "black-raisin": '#1e1a1d'
       },
       textColor: {
-        'soft-mint-green': '#D1E8E2',
-        'deep-teal': '#19747E',
-        'light-sky-blue': '#A9D6E5',
-        'light-gray': '#E2E2E2',
+        "dark-purple": '#1F0318',
+        "champagne": '#EEE0CB',
+        "bole": '#7F534B',
+        "chamoisee": '#8c705f',
+        "black-raisin": '#1e1a1d'
+      },
+      fontFamily: {
+        custom: ['font-mono', 'mono', 'sans-serif'], // Remplacez "CustomFont" par le nom de votre police de caractères
       },
     },
   },
