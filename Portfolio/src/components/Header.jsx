@@ -48,7 +48,7 @@ const Header = () => {
     }, [showTitle]);
 
     return (
-        <header className="bg-black-raisin text-champagne p-6">
+        <header className="bg-dark-purple text-champagne p-6 border-b-4 border-solid border-chamoisee">
             <div className="container mx-auto flex justify-between items-center">
                 <div className="flex items-center space-x-2">
                     <img src={profileImage} alt="Your Profile" className="w-20 h-20 p-2 bg-chamoisee rounded-full" />

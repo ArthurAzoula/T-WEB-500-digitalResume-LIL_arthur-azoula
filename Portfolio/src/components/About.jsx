@@ -1,28 +1,34 @@
 import React from "react";
-import CodingSvg from "../icons/Code"; // Remplacez par le chemin de votre fichier SVG de codage
-import WorldSvg from "../icons/World"; // Remplacez par le chemin de votre fichier SVG de monde
+import Quote from "./Quote";
+import gifDevelopper from "../assets/images/developper.gif";
 
 const About = () => {
     return (
-        <div className="bg-chamoisee text-champagne p-6 m-12 rounded-lg">
-            <div className="container mx-auto">
-                <h1 className="text-4xl font-bold mb-4">À propos de moi</h1>
-                <div className="flex flex-col lg:flex-row mb-8">
-                    <div className="lg:w-1/2 mr-6">
-                        <p className="text-lg mb-4">
-                            Salut à tous ! Je suis Arthur, un jeune étudiant en informatique passionné par la technologie.
-                        </p>
-                        <p className="text-lg">
-                            J'ai toujours été fasciné par le monde de l'informatique, et ma véritable passion se révèle (surtout dans les jeux vidéo) !
-                        </p>
-                    </div>
-                    <div className="lg:w-1/2 mt-6 lg:mt-0">
-                        {/* SVG d'un personnage qui code */}
-                        <div className="w-32 h-32 mx-auto lg:mx-0">
-                            <CodingSvg />
-                        </div>
-                    </div>
+        <div className="text-champagne bg-chamoisee p-8 m-12 rounded-md shadow-md">
+            <div className="container mx-auto text-center">
+                <h1 className="text-6xl font-bold mb-4">
+                    FullStack <span className="text-soft-mint-green">Developer</span>
+                </h1>
+                <div className="flex flex-col items-center">
+                    <p className="text-light-sky-marron mb-4">  
+                        <a
+                            className="underline"
+                            href="https://www.epitech.eu/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Epitech
+                        </a>
+                        Lille
+                    </p>
+                    <img  className="mx-auto" src={gifDevelopper} alt="Developer GIF" />
                 </div>
+            </div>
+            <div className="mt-12">
+                <Quote
+                    citation="Innovation distinguishes between a leader and a follower."
+                    auteur="Steve Jobs"
+                />
             </div>
         </div>
     );

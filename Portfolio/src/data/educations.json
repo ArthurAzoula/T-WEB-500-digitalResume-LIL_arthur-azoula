@@ -2,11 +2,34 @@
     "educations": [
         {
             "id": 1,
+            "degree": "BAC S Option ISN",
+            "school": "Lycée Jean-Monnet",
+            "location": "Crépy-en-Valois, France",
+            "date": "Septembre 2017 - Juin 2020",
+            "description": "Bac S SI option Informatique. Mention Bien.",
+            "competences": [
+                "PHP",
+                "HTML",
+                "CSS",
+                "JS",
+                "Symfony",
+                "Python",
+                "C++",
+                "Merise",
+                "UML",
+                "Gestion de Projet",
+                "Droit des TIC",
+                "Communication",
+                "Anglais"
+            ]
+        },
+        {
+            "id": 1,
             "degree": "DUT en Informatique",
             "school": "IUT de Reims",
             "location": "Reims, France",
-            "date": "Septembre 2020 - Juin 2022",
-            "description": "DUT Informatique sur deux ans, avec un stage. Apprentissage des différents concepts de l'informatique (web, réseaux, algorithmie, gestion de projets). D'autres concepts étudiés : communications, droit de l'informatique. Deuxième année avec une spécialité en ouverture scientifique, avec du C++ et un renforcement en mathématiques.",
+            "date": "Septembre 2023 - Juin 2024",
+            "description": "DUT Informatique sur deux ans, avec un stage. Apprentissage des différents concepts de l'informatique (web, réseaux, algorithmie, gestion de projets)",
             "competences": [
                 "PHP",
                 "HTML",
@@ -29,7 +52,7 @@
             "school": "Université de Lille",
             "location": "Lille, France",
             "date": "Septembre 2022 - Août 2023",
-            "description": "3ème année de Licence Informatique. Plusieurs concepts de l'informatique : programmation fonctionnelle avec Haskell, POO avec Java, gestion d'entreprise et optimisation des coûts dans une entreprise avec AMPL. JavaScript Full stack avec React et Node.js/Express.",
+            "description": "3ème année de Licence Informatique. Plusieurs concepts de l'informatique : programmation fonctionnelle avec Haskell, POO avec Java,",
             "competences": [
                 "HTML",
                 "CSS",
