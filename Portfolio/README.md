@@ -27,13 +27,13 @@ Pour exécuter ce projet en local, suivez les étapes suivantes :
 1. Clonez le dépôt GitHub :
 
 ```shell
-git clone https://github.com/votre-nom/portfolio-cv.git
+git clone https://github.com/EpitechMscProPromo2026/T-WEB-500-digitalResume-LIL_arthur-azoula.git
 ```
 
 2. Accédez au répertoire du projet :
 
 ```shell
-cd portfolio-cv
+cd 'Project_name'
 ```
 
 3. Installez les dépendances avec npm ou yarn
