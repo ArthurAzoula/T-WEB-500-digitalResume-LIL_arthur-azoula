@@ -1,6 +1,6 @@
 # Portfolio CV
 
-Ce projet est un portfolio CV personnel conçu pour présenter mes compétences, mon expérience, et d'autres informations importantes. Il est construit en utilisant React et Vite pour un développement rapide et des performances optimales.
+Ce projet est un CV personnel conçu pour présenter mes compétences, mon expérience, et d'autres informations importantes. Il est construit en utilisant React et Vite pour un développement rapide et des performances optimales.
 
 ## Fonctionnalités
 

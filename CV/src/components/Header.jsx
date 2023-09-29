@@ -9,7 +9,7 @@ import Skills from "../icons/Skills";
 const Header = () => {
     const [showTitle, setShowTitle] = useState(false);
     const [animatedTitle, setAnimatedTitle] = useState("");
-    const titleText = "Arthur's Portfolio...";
+    const titleText = "Arthur's CV...";
 
     useEffect(() => {
         const titleTimeout = setTimeout(() => {
