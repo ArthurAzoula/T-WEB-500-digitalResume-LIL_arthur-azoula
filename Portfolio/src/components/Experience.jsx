@@ -29,7 +29,7 @@ function Experience() {
     };
 
     return (
-        <div id='#experience' className="bg-chamoisee text-champagne relative m-12 rounded-lg p-8">
+        <section id='experience' className="bg-chamoisee text-champagne relative m-12 rounded-lg p-8">
             <SectionTitle title={"Mes expériences profesionnelles"} />
             <div className="flex items-center">
                 <button
@@ -42,11 +42,11 @@ function Experience() {
                 </button>
             </div>
             <div className="relative overflow-hidden">
-                <ul className="flex flex-wrap justify-center space-x-4 mt-4">
+                <ul className="flex flex-wrap justify-center gap-6 mt-4">
                     {experiences.map((experience, index) => (
                         <li
                             key={experience.id}
-                            className={`w-72 h-auto text-chamoisee flex flex-col items-start  rounded-lg bg-champagne cursor-pointer ${activeExperience === index ? "font-semibold" : ""}`}
+                            className={`w-72 h-auto text-chamoisee flex flex-col items-start justify-between mt-4 rounded-lg bg-champagne cursor-pointer ${activeExperience === index ? "font-semibold" : ""}`}
                             onClick={() => handleExperienceClick(index)}
                         >
                             <div className="relative w-full h-40 overflow-hidden">
@@ -122,7 +122,7 @@ function Experience() {
                     )}
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

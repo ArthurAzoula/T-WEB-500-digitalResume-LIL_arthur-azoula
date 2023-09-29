@@ -22,7 +22,7 @@ function Education() {
     };
 
     return (
-        <div className="bg-chamoisee text-champagne p-8 m-12 rounded-md shadow-md">
+        <section id='education' className="bg-chamoisee text-champagne p-8 m-12 rounded-md shadow-md">
             <SectionTitle title={"Mon parcours scolaire"} />
             <div className='flex items-center justify-center'>
                 <button
@@ -67,7 +67,7 @@ function Education() {
                     </li>
                 ))}
             </ul>
-        </div>
+        </section>
     );
 }
 

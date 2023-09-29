@@ -47,6 +47,17 @@ const Header = () => {
         };
     }, [showTitle]);
 
+    const ScrollToSection = (sectionId) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            window.scrollTo({
+                top: section.offsetTop,
+                behavior: "smooth"
+            });
+        }
+    };
+
+
     return (
         <header className="bg-dark-purple text-champagne p-6 border-b-4 border-solid border-chamoisee">
             <div className="container mx-auto flex justify-between items-center">
@@ -59,36 +70,68 @@ const Header = () => {
                     ) : null}
                 </div>
                 <button className="lg:hidden" onClick={toggleNav}></button>
-                <nav className={`lg:flex ${isNavOpen ? "blockArthur's" : "hidden"} transition-all duration-300`}>
+                <nav className={`lg:flex ${isNavOpen ? "block" : "hidden"} transition-all duration-300`}>
                     <ul className="lg:flex space-x-6 bg-chamoisee p-4 rounded-md">
                         <li className="flex items-center hover:text-black-raisin hover:underline">
-                            <User className="w-5 h-5 mr-2" />Arthur's
-                            <a href="#about" className=" ml-2">
-                                 About me
+                            <User className="w-5 h-5 mr-2" />
+                            <a
+                                className="ml-2 cursor-pointer"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    ScrollToSection("about");
+                                }}
+                            >
+                                About me
                             </a>
                         </li>
                         <li className="flex items-center hover:text-black-raisin hover:underline">
                             <Experience className="w-5 h-5" />
-                            <a href="#experience" className="ml-2">
-                                 Experience
+                            <a
+                                className="ml-2 cursor-pointer"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    ScrollToSection("experience");
+                                }}
+                            >
+                                Experience
                             </a>
                         </li>
                         <li className="flex items-center hover:text-black-raisin hover:underline">
                             <School className="w-5 h-5 mr-2" />
-                            <a href="#education" className="  ml-2">
-                                 Education
+                            <a
+                                className="ml-2 cursor-pointer"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    ScrollToSection("education");
+                                }}
+                            >
+                                Education
                             </a>
                         </li>
                         <li className="flex items-center hover:text-black-raisin hover:underline">
-                            <Skills className="w-5 h-5 mr-2" />
-                            <a href="#skills" className="  ml-2">
-                                 Skills
+                            <Skills className="w-5 h-5 mr-2 " />
+                            <a
+                                href="#about"
+                                className="ml-2 cursor-pointer"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    ScrollToSection("skills");
+                                }}
+                            >
+                                Skills
                             </a>
                         </li>
                         <li className="flex items-center hover:text-black-raisin hover:underline">
                             <Contact className="w-5 h-5 mr-2" />
-                            <a href="#contact" className="  ml-2">
-                                 Contact
+                            <a
+                                href="#about"
+                                className="ml-2 cursor-pointer"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    ScrollToSection("contact");
+                                }}
+                            >
+                                Contact
                             </a>
                         </li>
                     </ul>

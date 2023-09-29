@@ -4,67 +4,92 @@
             "id": 1,
             "nom": "React",
             "niveau": "Intermédiaire",
-            "type": "Framework"
+            "type": "Framework",
+            "class": "devicon-react-original colored"
         },
         {
             "id": 2,
             "nom": "JavaScript",
             "niveau": "Avancé",
-            "type": "Language"
+            "type": "Language",
+            "class": "devicon-javascript-plain colored"
         },
         {
             "id": 3,
             "nom": "HTML/CSS",
             "niveau": "Intermédiaire",
-            "type": "Language"
+            "type": "Language",
+            "class": "devicon-html5-plain colored"
         },
         {
             "id": 4,
             "nom": "PHP",
             "niveau": "Avancé",
-            "type": "Language"
+            "type": "Language",
+            "class": "devicon-php-plain colored"
         },
         {
             "id": 5,
             "nom": "Laravel",
             "niveau": "Intermédiaire",
-            "type": "Framework"
+            "type": "Framework",
+            "class": "devicon-laravel-plain-wordmark colored"
         },
         {
             "id": 6,
             "nom": "Node.js",
             "niveau": "Intermédiaire",
-            "type": "Framework"
+            "type": "Framework",
+            "class": "devicon-nodejs-plain colored"
         },
         {
             "id": 7,
             "nom": "Express",
             "niveau": "Intermédiaire",
-            "type": "Framework"
+            "type": "Framework",
+            "class": "devicon-express-original colored"
         },
         {
             "id": 8,
             "nom": "Base de données",
             "niveau": "Avancé",
-            "type": "Technology"
+            "type": "Technology",
+            "class": "devicon-mysql-plain colored"
         },
         {
             "id": 9,
             "nom": "Angular",
             "niveau": "Débutant",
-            "type": "Framework"
+            "type": "Framework",
+            "class" : "devicon-angularjs-plain colored"
         },
         {
             "id": 10,
             "nom": "TailwindCSS",
             "niveau": "Intermédiaire",
-            "type": "Framework"
+            "type": "Framework",
+            "class": "devicon-tailwindcss-original-wordmark colored"
         },
         {
             "id": 11,
-            "nom": "Anglais",
+            "nom": "Git",
             "niveau": "Avancé",
-            "type": "Language"
+            "type": "Technology",
+            "class": "devicon-git-plain colored"
+        },
+        {
+            "id": 12,
+            "nom": "Java",
+            "niveau": "Intermédiaire",
+            "type": "Language",
+            "class": "devicon-java-plain colored"
+        },
+        {
+            "id": 13,
+            "nom": "Python",
+            "niveau": "Avancé",
+            "type": "Language",
+            "class": "devicon-python-plain colored"
         }
     ]
 }

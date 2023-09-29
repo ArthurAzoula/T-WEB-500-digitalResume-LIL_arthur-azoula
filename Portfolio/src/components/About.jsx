@@ -20,7 +20,7 @@ const About = () => {
     };
 
     return (
-        <div className="text-champagne bg-chamoisee p-8 m-12 rounded-md shadow-md">
+        <section id="about" className="text-champagne bg-chamoisee p-8 m-12 rounded-md shadow-md">
             <motion.div
                 className=""
                 variants={aboutVariants}
@@ -49,20 +49,45 @@ const About = () => {
                             Lille
                         </p>
                     </div>
-                    <p className="text-justify">
-
-                        Hello everyone! My name is Arthur, and I've always been fascinated by technology. I'm a true enthusiast (especially when it comes to video games)!
-
-                        It's for these various reasons that I chose to study computer science at the IUT of Reims from 2020 to 2022, where I discovered my love for coding. It was a bit like falling in love, but with fewer flowers and more caffeine. After two years of adventures, projects, and even an internship, I earned my DUT (University Technology Diploma)! But it was still too early to stop on such a good path.
-
-                        That's why I continued my studies at the University of Lille in the 3rd year of Computer Science. I learned a lot and was exposed to technologies I had never seen before. But I embraced the challenge and kept progressing. Additionally, I had the opportunity to complete a second internship at a company.
-
-                        All these experiences at school (projects, internships, etc.) have inspired me to deepen my knowledge of computer science in the professional world. With immense pride, I embark on a new adventure at Epitech for the next three years in an apprenticeship program!
-
-                        Outside of the world of computers, I enjoy spending time with my friends, playing video games, and exploring the world. But don't get me wrong; I'm just as serious about my professional projects as I am about my video game sessions. I'm determined to become an expert in my field and make a difference in the world.
-                    </p>
-                    <div></div>
+                    <div className="container mx-auto flex justify-between mt-6 gap-4">
+                        <div className="w-1/3 text-center bg-champagne rounded-lg p-2 text-dark-gray">
+                            {/* Partie Hobbies */}
+                            <h2 className="text-3xl font-semibold mb-2">Passions</h2>
+                            <ul className="list-disc list-inside">
+                                <li>Jouer aux jeux-vidéos</li>
+                                <li>Explorer de nouvelles technologies</li>
+                                <li>Ecouter de la musique</li>
+                            </ul>
+                        </div>
+                        <div className="w-1/3 bg-champagne rounded-lg p-2 text-dark-gray">
+                            {/* Partie À propos de moi */}
+                            <h2 className="text-3xl font-semibold mb-2">À propos de moi</h2>
+                            <p className="text-center">
+                                Je m'appelle Arthur, et j'ai toujours été fasciné par la technologie. Je suis un vrai passionné (surtout quand il s'agit de jeux vidéo) !
+                            </p>
+                        </div>
+                        <div className="w-1/3 bg-champagne rounded-lg p-2 text-dark-gray">
+                            {/* Autres informations */}
+                            <h2 className="text-3xl font-semibold mb-2">Autres</h2>
+                            <ul className="list-disc list-inside">
+                                <li>Langues: Anglais - B1</li>
+                                <li>Permis de conduire: B</li>
+                                {/* Ajoutez d'autres informations ici */}
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+                <div className="flex justify-center">
+                    <a
+                        href="/CV_AZOULA_ARTHUR_2023.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-dark-gray mt-8 text-champagne px-4 py-2 rounded-full hover:bg-mint-green transition duration-300"
+                    >
+                        Télécharger mon CV
+                    </a>
+                </div>
+
                 <div className="mt-12">
                     <Quote
                         citation="Innovation distinguishes between a leader and a follower."
@@ -70,7 +95,7 @@ const About = () => {
                     />
                 </div>
             </motion.div>
-        </div>
+        </section>
     );
 };
 
