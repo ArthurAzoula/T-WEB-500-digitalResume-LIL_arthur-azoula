@@ -10,7 +10,7 @@ const Header = () => {
     const [isNavOpen, setNavOpen] = useState(false);
     const [showTitle, setShowTitle] = useState(false);
     const [animatedTitle, setAnimatedTitle] = useState("");
-    const titleText = "Arthur's Portolio...";
+    const titleText = "Arthur's Portfolio...";
 
     const toggleNav = () => {
         setNavOpen(!isNavOpen);
@@ -59,10 +59,10 @@ const Header = () => {
                     ) : null}
                 </div>
                 <button className="lg:hidden" onClick={toggleNav}></button>
-                <nav className={`lg:flex ${isNavOpen ? "block" : "hidden"} transition-all duration-300`}>
+                <nav className={`lg:flex ${isNavOpen ? "blockArthur's" : "hidden"} transition-all duration-300`}>
                     <ul className="lg:flex space-x-6 bg-chamoisee p-4 rounded-md">
                         <li className="flex items-center hover:text-black-raisin hover:underline">
-                            <User className="w-5 h-5 mr-2" />
+                            <User className="w-5 h-5 mr-2" />Arthur's
                             <a href="#about" className=" ml-2">
                                  About me
                             </a>

@@ -31,7 +31,7 @@ export default {
         "chamoisee": '#8c705f',
         "black-raisin": '#1e1a1d',
         "dark-gray": "#151515"
-      }
+      },
     },
   },
   plugins: [],

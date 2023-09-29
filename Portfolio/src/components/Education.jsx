@@ -5,6 +5,7 @@ import Location from '../icons/Location';
 import Calendar from '../icons/Calendar';
 import Description from '../icons/Description';
 import Sort from '../icons/Sort';
+import SectionTitle from './SectionTitle';
 
 function Education() {
     const [sortedEducations, setSortedEducations] = useState(data.educations);
@@ -22,7 +23,7 @@ function Education() {
 
     return (
         <div className="bg-chamoisee text-champagne p-8 m-12 rounded-md shadow-md">
-            <h1 className="text-2xl font-semibold text-center mb-4">Mon Parcours Scolaire</h1>
+            <SectionTitle title={"Mon parcours scolaire"} />
             <div className='flex items-center justify-center'>
                 <button
                     onClick={sortByDate}
