@@ -81,7 +81,7 @@ const About = () => {
                         href="/CV_AZOULA_ARTHUR_2023.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-dark-gray hover:-translate-y-1 hover:scale-110 duration-300 mt-8 text-champagne px-4 py-2 rounded-full hover:bg-mint-green transition duration-300"
+                        className="bg-dark-gray hover:-translate-y-1 hover:scale-110 duration-300 mt-8 text-champagne px-4 py-2 rounded-full hover:bg-mint-green transition"
                     >
                         Télécharger mon CV
                     </a>

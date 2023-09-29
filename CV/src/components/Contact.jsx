@@ -27,10 +27,18 @@ const Contact = () => {
         console.log("Formulaire soumis avec les données :", formData);
         // Mettre le toast visble
         setToastVisble(true);
+        // form a 0
+        setFormData({
+            name: "",
+            email: "",
+            message: "",
+        })
         // Faire disparaître le toast 
         setTimeout(() => {
             setToastVisble(false);
         }, 5000)
+
+
 
     };
 
