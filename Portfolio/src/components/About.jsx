@@ -1,6 +1,5 @@
 import React from "react";
 import Quote from "./Quote";
-import gifDevelopper from "../assets/images/coding.gif";
 import { motion } from "framer-motion";
 
 const About = () => {
@@ -32,7 +31,7 @@ const About = () => {
                 }}
             >
                 <div className="container mx-auto text-center">
-                    <h1 className="text-6xl font-bold mb-4">
+                    <h1 className="md:text-6xl text-4xl font-bold mb-4">
                         FullStack <span className="text-soft-mint-green">Developer</span>
                     </h1>
                     <div className="flex flex-col items-center">
@@ -49,8 +48,8 @@ const About = () => {
                             Lille
                         </p>
                     </div>
-                    <div className="container mx-auto flex justify-between mt-6 gap-4">
-                        <div className="w-1/3 text-center bg-champagne rounded-lg p-2 text-dark-gray">
+                    <div className="container mx-auto flex-col md:flex-row flex justify-between mt-6 gap-4">
+                        <div className="md:w-1/3 text-center bg-champagne rounded-lg p-2 text-dark-gray">
                             {/* Partie Hobbies */}
                             <h2 className="text-3xl font-semibold mb-2">Passions</h2>
                             <ul className="list-disc list-inside">
@@ -59,14 +58,14 @@ const About = () => {
                                 <li>Ecouter de la musique</li>
                             </ul>
                         </div>
-                        <div className="w-1/3 bg-champagne rounded-lg p-2 text-dark-gray">
+                        <div className="md:w-1/3 bg-champagne rounded-lg p-2 text-dark-gray">
                             {/* Partie À propos de moi */}
                             <h2 className="text-3xl font-semibold mb-2">À propos de moi</h2>
                             <p className="text-center">
                                 Je m'appelle Arthur, et j'ai toujours été fasciné par la technologie. Je suis un vrai passionné (surtout quand il s'agit de jeux vidéo) !
                             </p>
                         </div>
-                        <div className="w-1/3 bg-champagne rounded-lg p-2 text-dark-gray">
+                        <div className="md:w-1/3 bg-champagne rounded-lg p-2 text-dark-gray">
                             {/* Autres informations */}
                             <h2 className="text-3xl font-semibold mb-2">Autres</h2>
                             <ul className="list-disc list-inside">
@@ -77,12 +76,12 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-center">
+                <div className="flex justify-center ">
                     <a
                         href="/CV_AZOULA_ARTHUR_2023.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-dark-gray mt-8 text-champagne px-4 py-2 rounded-full hover:bg-mint-green transition duration-300"
+                        className="bg-dark-gray hover:-translate-y-1 hover:scale-110 duration-300 mt-8 text-champagne px-4 py-2 rounded-full hover:bg-mint-green transition duration-300"
                     >
                         Télécharger mon CV
                     </a>

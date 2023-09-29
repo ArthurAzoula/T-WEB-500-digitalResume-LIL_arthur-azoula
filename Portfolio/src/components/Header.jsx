@@ -4,17 +4,12 @@ import School from "../icons/School";
 import User from "../icons/User";
 import Experience from "../icons/Experience";
 import Contact from "../icons/Contact";
-import Skills from "../icons/Skills"
+import Skills from "../icons/Skills";
 
 const Header = () => {
-    const [isNavOpen, setNavOpen] = useState(false);
     const [showTitle, setShowTitle] = useState(false);
     const [animatedTitle, setAnimatedTitle] = useState("");
     const titleText = "Arthur's Portfolio...";
-
-    const toggleNav = () => {
-        setNavOpen(!isNavOpen);
-    };
 
     useEffect(() => {
         const titleTimeout = setTimeout(() => {
@@ -39,7 +34,7 @@ const Header = () => {
         };
 
         if (showTitle) {
-            animationInterval = setInterval(animateTitle, 400); // Délai entre chaque caractère (en millisecondes)
+            animationInterval = setInterval(animateTitle, 200); // Délai entre chaque caractère (en millisecondes)
         }
 
         return () => {
@@ -57,29 +52,24 @@ const Header = () => {
         }
     };
 
-
     return (
         <header className="bg-dark-purple text-champagne p-6 border-b-4 border-solid border-chamoisee">
             <div className="container mx-auto flex justify-between items-center">
                 <div className="flex items-center space-x-2">
                     <img src={profileImage} alt="Your Profile" className="w-20 h-20 p-2 bg-chamoisee rounded-full" />
                     {showTitle ? (
-                        <h1 className="text-2xl font-semibold animate-title-in p-2 capitalize font-mono">
+                        <h1 className="font-semibold animate-title-in p-2 capitalize font-mono text-base md:text-2xl">
                             {animatedTitle}
                         </h1>
                     ) : null}
                 </div>
-                <button className="lg:hidden" onClick={toggleNav}></button>
-                <nav className={`lg:flex ${isNavOpen ? "block" : "hidden"} transition-all duration-300`}>
-                    <ul className="lg:flex space-x-6 bg-chamoisee p-4 rounded-md">
+                <nav className="lg:flex transition-all duration-300 flex-col lg:flex-row">
+                    <ul className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 bg-chamoisee p-4 rounded-md">
                         <li className="flex items-center hover:text-black-raisin hover:underline">
-                            <User className="w-5 h-5 mr-2" />
+                            <User className="w-5 h-5" />
                             <a
                                 className="ml-2 cursor-pointer"
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    ScrollToSection("about");
-                                }}
+                                onClick={() => ScrollToSection("about")}
                             >
                                 About me
                             </a>
@@ -88,10 +78,7 @@ const Header = () => {
                             <Experience className="w-5 h-5" />
                             <a
                                 className="ml-2 cursor-pointer"
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    ScrollToSection("experience");
-                                }}
+                                onClick={() => ScrollToSection("experience")}
                             >
                                 Experience
                             </a>
@@ -100,10 +87,7 @@ const Header = () => {
                             <School className="w-5 h-5 mr-2" />
                             <a
                                 className="ml-2 cursor-pointer"
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    ScrollToSection("education");
-                                }}
+                                onClick={() => ScrollToSection("education")}
                             >
                                 Education
                             </a>
@@ -113,10 +97,7 @@ const Header = () => {
                             <a
                                 href="#about"
                                 className="ml-2 cursor-pointer"
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    ScrollToSection("skills");
-                                }}
+                                onClick={() => ScrollToSection("skills")}
                             >
                                 Skills
                             </a>
@@ -126,10 +107,7 @@ const Header = () => {
                             <a
                                 href="#about"
                                 className="ml-2 cursor-pointer"
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    ScrollToSection("contact");
-                                }}
+                                onClick={() => ScrollToSection("contact")}
                             >
                                 Contact
                             </a>

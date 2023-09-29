@@ -54,10 +54,10 @@ const Skills = () => {
                     <h2 className="text-lg font-semibold mb-2">{type}</h2>
                     <div className="grid grid-cols-2 gap-4">
                         {groupedSkills[type].map((competence) => (
-                            <div key={competence.id} className="bg-champagne p-4 rounded-md shadow-md">
+                            <div key={competence.id} className="bg-champagne hover:-translate-y-1 hover:scale-90 duration-300 p-4 rounded-md shadow-md">
                                 <div className="flex items-center mb-2">
                                     <i className={competence.class}></i>
-                                    <h3 className="text-xl font-bold text-dark-gray ml-2">{competence.nom}</h3>
+                                    <h3 className="md:text-xl text-base font-bold text-dark-gray ml-2">{competence.nom}</h3>
                                 </div>
                                 <div className="relative h-6 bg-gray-300 rounded-full">
                                     <div

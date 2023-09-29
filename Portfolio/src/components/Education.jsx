@@ -27,7 +27,7 @@ function Education() {
             <div className='flex items-center justify-center'>
                 <button
                     onClick={sortByDate}
-                    className="bg-black-raisin rounded-lg py-2 px-4 mb-4"
+                    className="bg-black-raisin hover:-translate-y-1 hover:scale-110 duration-300 rounded-lg py-2 px-4 mb-4"
                 >
                     <div className='flex items-center'>
                         <Sort /><p className='ml-2'>Trier par date</p>

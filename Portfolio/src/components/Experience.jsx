@@ -34,9 +34,9 @@ function Experience() {
             <div className="flex items-center">
                 <button
                     onClick={sortByDate}
-                    className="bg-black-raisin text-soft-mint-green py-2 px-4 rounded-lg mb-4 mx-auto inline-block"
+                    className="bg-black-raisin hover:-translate-y-1 hover:scale-110 duration-300 text-soft-mint-green py-2 px-4 rounded-lg mb-4 mx-auto inline-block"
                 >
-                    <div className="flex items-center">
+                    <div className="flex items-center ">
                         <Sort /><p className="ml-2">Trier par date</p>
                     </div>
                 </button>
@@ -46,7 +46,7 @@ function Experience() {
                     {experiences.map((experience, index) => (
                         <li
                             key={experience.id}
-                            className={`w-72 h-auto text-chamoisee flex flex-col items-start justify-between mt-4 rounded-lg bg-champagne cursor-pointer ${activeExperience === index ? "font-semibold" : ""}`}
+                            className={`w-72 h-auto text-chamoisee flex flex-col items-start hover:-translate-y-1 hover:scale-110 duration-300 justify-between mt-4 rounded-lg bg-champagne cursor-pointer ${activeExperience === index ? "font-semibold" : ""}`}
                             onClick={() => handleExperienceClick(index)}
                         >
                             <div className="relative w-full h-40 overflow-hidden">
