@@ -95,7 +95,7 @@ const Header = () => {
                         <li className="flex items-center hover:text-black-raisin hover:underline">
                             <Skills className="w-5 h-5 mr-2 " />
                             <a
-                                href="#about"
+                                
                                 className="ml-2 cursor-pointer"
                                 onClick={() => ScrollToSection("skills")}
                             >
@@ -105,7 +105,7 @@ const Header = () => {
                         <li className="flex items-center hover:text-black-raisin hover:underline">
                             <Contact className="w-5 h-5 mr-2" />
                             <a
-                                href="#about"
+                                
                                 className="ml-2 cursor-pointer"
                                 onClick={() => ScrollToSection("contact")}
                             >
