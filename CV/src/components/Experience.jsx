@@ -11,19 +11,6 @@ function Experience() {
     const [experiences, setExperiences] = useState(data.experiences);
     const [activeExperience, setActiveExperience] = useState(null);
 
-    const sortByDate = () => {
-        const sorted = [...experiences].sort((a, b) => {
-            const dateA = new Date(a.date).getTime();
-            const dateB = new Date(b.date).getTime();
-            return dateB - dateA;
-        });
-        setExperiences(sorted);
-    };
-
-    useEffect(() => {
-        sortByDate();
-    }, []);
-
     const handleExperienceClick = (index) => {
         setActiveExperience(index);
     };
@@ -31,16 +18,6 @@ function Experience() {
     return (
         <section id='experience' className="bg-chamoisee text-champagne relative m-12 rounded-lg p-8">
             <SectionTitle title={"Mes expériences profesionnelles"} />
-            <div className="flex items-center">
-                <button
-                    onClick={sortByDate}
-                    className="bg-black-raisin hover:-translate-y-1 hover:scale-110 duration-300 text-soft-mint-green py-2 px-4 rounded-lg mb-4 mx-auto inline-block"
-                >
-                    <div className="flex items-center ">
-                        <Sort /><p className="ml-2">Trier par date</p>
-                    </div>
-                </button>
-            </div>
             <div className="relative overflow-hidden">
                 <ul className="flex flex-wrap justify-center gap-6 mt-4">
                     {experiences.map((experience, index) => (
@@ -73,7 +50,7 @@ function Experience() {
                 <div className="flex flex-col items-center justify-center h-full mt-8 text-justify w-full">
                     {activeExperience !== null && (
                         <div
-                            className={`bg-bole p-4 rounded-md shadow-md mb-4 ${activeExperience % 2 === 0 ? "ml-8" : "mr-8"}`}
+                            className={`bg-bole p-4 rounded-md shadow-md mb-4`}
                         >
                             <div className="absolute left-0 top-0 bottom-0 h-0.5 bg-light-sky-marron w-20"></div>
                             <div className="flex items-center mb-2">
@@ -82,28 +59,26 @@ function Experience() {
                                         {activeExperience + 1}
                                     </i>
                                 </div>
-                               
-                                    <h2 className="text-xl font-semibold">
+
+                                <h2 className="text-xl font-semibold">
                                     <div className='flex'>
                                         <House /><span className='ml-2'>{experiences[activeExperience].poste} chez{" "}
-                                        {experiences[activeExperience].entreprise}</span>
+                                            {experiences[activeExperience].entreprise}</span>
                                     </div>
-                                    </h2>
-                               
-                                
+                                </h2>
+
+
                             </div>
-                            <p className="text-light-sky-marron">
-                                <div className='flex'>
-                                    <Calendar /><span className='ml-2'>{experiences[activeExperience].date}</span>
-                                </div>
-                                
-                            </p>
-                            <p className="text-light-sky-marron">
-                                <div className='flex'>
-                                    <Code /><span className='ml-2'>{experiences[activeExperience].description}</span>
-                                </div>
-                                
-                            </p>
+                        
+                            <div className='flex'>
+                                <Calendar /><span className='ml-2'>{experiences[activeExperience].date}</span>
+                            </div>
+
+
+                            <div className='flex'>
+                                <Code /><span className='ml-2'>{experiences[activeExperience].description}</span>
+                            </div>
+
                             {experiences[activeExperience].projets && (
                                 <ul className="list-disc pl-6 mt-2">
                                     {experiences[activeExperience].projets.map(

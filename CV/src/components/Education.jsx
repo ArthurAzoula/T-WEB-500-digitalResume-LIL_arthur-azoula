@@ -4,44 +4,21 @@ import House from '../icons/House';
 import Location from '../icons/Location';
 import Calendar from '../icons/Calendar';
 import Description from '../icons/Description';
-import Sort from '../icons/Sort';
 import SectionTitle from './SectionTitle';
 
 function Education() {
-    const [sortedEducations, setSortedEducations] = useState(data.educations);
-    const [isSorted, setIsSorted] = useState(false);
-
-    const sortByDate = () => {
-        const sorted = [...sortedEducations].sort((a, b) => {
-            const dateA = new Date(a.date).getTime();
-            const dateB = new Date(b.date).getTime();
-            return dateB - dateA;
-        });
-        setSortedEducations(sorted);
-        setIsSorted(true);
-    };
 
     return (
         <section id='education' className="bg-chamoisee text-champagne p-8 m-12 rounded-md shadow-md">
             <SectionTitle title={"Mon parcours scolaire"} />
             <div className='flex items-center justify-center'>
-                <button
-                    onClick={sortByDate}
-                    className="bg-black-raisin hover:-translate-y-1 hover:scale-110 duration-300 rounded-lg py-2 px-4 mb-4"
-                >
-                    <div className='flex items-center'>
-                        <Sort /><p className='ml-2'>Trier par date</p>
-
-                    </div>
-                </button>
-
             </div>
 
             <ul className="space-y-4">
-                {sortedEducations.map((education, index) => (
+                {data.educations.map((education, index) => (
                     <li
                         key={education.id}
-                        className={`bg-bole p-4 rounded-md shadow-md transform transition-transform duration-300 ease-in-out ${index % 2 === 0 ? 'translate-x-4' : '-translate-x-4'
+                        className={`p-4 rounded-md shadow-md transform transition-transform hover:scale-90 duration-300 ease-in-out ${index % 2 === 0 ? 'translate-x-4 bg-bole' : '-translate-x-4 bg-champagne text-chamoisee'
                             }`}
                     >
 

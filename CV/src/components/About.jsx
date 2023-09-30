@@ -56,22 +56,24 @@ const About = () => {
                                 <li>Jouer aux jeux-vidéos</li>
                                 <li>Explorer de nouvelles technologies</li>
                                 <li>Ecouter de la musique</li>
+                                <li>Regarder des séries</li>
+                                <li>Voyager</li>
                             </ul>
                         </div>
                         <div className="md:w-1/3 bg-champagne rounded-lg p-2 text-dark-gray">
                             {/* Partie À propos de moi */}
                             <h2 className="text-3xl font-semibold mb-2">À propos de moi</h2>
-                            <p className="text-center">
-                                Je m'appelle Arthur, et j'ai toujours été fasciné par la technologie. Je suis un vrai passionné (surtout quand il s'agit de jeux vidéo) !
+                            <p className="text-justify">
+                                Je m'appelle Arthur AZOULA, j'ai 21 ans, je suis étudiant en 3ème année chez Epitech et j'ai toujours été fasciné par la technologie. Je suis un vrai passionné (surtout quand il s'agit de jeux vidéo) !
                             </p>
                         </div>
                         <div className="md:w-1/3 bg-champagne rounded-lg p-2 text-dark-gray">
                             {/* Autres informations */}
                             <h2 className="text-3xl font-semibold mb-2">Autres</h2>
-                            <ul className="list-disc list-inside">
+                            <ul className="list-disc list-inside text-center">
                                 <li>Langues: Anglais - B1</li>
                                 <li>Permis de conduire: B</li>
-                                {/* Ajoutez d'autres informations ici */}
+                                <li>MEL - IDF</li>
                             </ul>
                         </div>
                     </div>

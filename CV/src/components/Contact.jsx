@@ -17,7 +17,7 @@ const Contact = () => {
         const { name, value } = e.target;
         setFormData({
             ...formData,
-            [name]: value,
+            [name]: value,  
         });
     };
 
@@ -31,7 +31,7 @@ const Contact = () => {
         setFormData({
             name: "",
             email: "",
-            message: "",
+            message: "",    
         })
         // Faire disparaître le toast 
         setTimeout(() => {
@@ -65,7 +65,7 @@ const Contact = () => {
                         Adresse e-mail
                     </label>
                     <input
-                        type="email"
+                        type="email"    
                         id="email"
                         name="email"
                         value={formData.email}
@@ -82,7 +82,7 @@ const Contact = () => {
                         id="message"
                         name="message"
                         value={formData.message}
-                        onChange={handleChange}
+                        onChange={handleChange} 
                         required
                         rows="4"
                         className="w-full p-2 text-black border round border-champagne bg-white"
@@ -103,6 +103,7 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
+                    
                 )}
 
 
